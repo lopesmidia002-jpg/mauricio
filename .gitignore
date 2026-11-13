@@ -1,0 +1,68 @@
+# ==========================================
+# Dependências e Pacotes
+# ==========================================
+node_modules/
+package-lock.json
+.pnp
+.pnp.js
+
+# ==========================================
+# Compilação e Artefatos de Build
+# ==========================================
+dist/
+dist-ssr/
+build/
+*.local
+
+# ==========================================
+# Logs e Depuração
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# Variáveis de Ambiente e Segredos
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# ==========================================
+# Editores e IDEs
+# ==========================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-workspace
+
+# ==========================================
+# Sistema Operacional e Cache
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Arquivos Temporários de Projeto
+# ==========================================
+.system_generated/
+pdf_content.txt
+LANDING-MAURICIO/*.pdf

@@ -1,0 +1,11 @@
+node_modules
+dist
+.git
+.gitignore
+*.log
+LANDING-MAURICIO/*.pdf
+pdf_content.txt
+.system_generated
+.vscode
+.idea
+

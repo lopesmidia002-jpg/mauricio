@@ -1,0 +1,28 @@
+# robots.txt for Criando as Marcas do Futuro — Método A2M SigniTelling™
+User-agent: *
+Allow: /
+
+# AI Search & Generative Engine Crawlers (GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: http://localhost:8080/sitemap.xml
+
