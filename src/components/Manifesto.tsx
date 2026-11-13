@@ -8,11 +8,11 @@ export const Manifesto: React.FC = () => {
           
           {/* Left Column: Book in Hands (img02.png) */}
           <div className="md:col-span-5 flex justify-center">
-            <div className="overflow-hidden rounded-2xl sm:rounded-3xl shadow-sm border border-gray-100 max-w-[420px] w-full">
+            <div className="overflow-hidden rounded-2xl sm:rounded-3xl max-w-[420px] w-full">
               <img
                 src="/assets/img02.png"
                 alt="Criando as Marcas do Futuro - Livro nas Mãos"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover rounded-2xl sm:rounded-3xl"
                 loading="lazy"
                 width={600}
                 height={600}

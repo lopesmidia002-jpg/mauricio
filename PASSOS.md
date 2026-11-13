@@ -31,6 +31,7 @@
   - Ajuste Mobile UX em Cards de Imagem: Reposicionamento responsivo dos balões informativos nos cards visuais (`Method.tsx`, `ShowcaseGallery.tsx`, `Manifesto.tsx` e `AboutAuthor.tsx`). No mobile, os balões se posicionam logo abaixo das imagens (`mt-3`), desobstruindo 100% das fotos sem cobrir os 4 livros ou painéis, mantendo a sobreposição flutuante elegante apenas no desktop (`sm:absolute`).
   - Alinhamento Integral e Fidelidade 1:1 ao Arquivo `LANDING PAGE LIVRO.pdf`: Reestruturação completa do layout para refletir rigorosamente a diagramação do documento oficial (fundo branco editorial, tipografia limpa de alto contraste, seção escura exclusiva do Assistente AI, eliminação de balões sobre fotos e posicionamento exato das 6 imagens e textos do autor).
   - Ocultação da Barra Superior e Hero em Sangria Total (Como no Original): Remoção da barra de navegação superior e ampliação de `img01.png` para sangria total (100% de largura, sem margens ou bordas arredondadas), iniciando imediatamente no topo da página exatamente como no PDF original.
+  - Remoção da Linha de Contorno dos Livros (Exatamente Igual ao Original): Exclusão de qualquer moldura, borda (`border-gray-100`) ou contorno de container na imagem dos 4 livros (`img03.png`) e foto de leitura (`img02.png`), integrando os ativos perfeitamente ao fundo branco contínuo do documento original.
 
 ---
 

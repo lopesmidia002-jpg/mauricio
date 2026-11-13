@@ -2,7 +2,7 @@ import React from 'react';
 
 export const AboutAuthor: React.FC = () => {
   return (
-    <section id="autor" className="py-12 sm:py-16 bg-white border-t border-gray-100">
+    <section id="autor" className="py-12 sm:py-16 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         
         {/* Gray Container Card (as seen in PDF) */}

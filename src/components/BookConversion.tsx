@@ -3,7 +3,7 @@ import { ExternalLink } from 'lucide-react';
 
 export const BookConversion: React.FC = () => {
   return (
-    <section id="comprar" className="py-12 sm:py-20 bg-white border-t border-gray-100">
+    <section id="comprar" className="py-12 sm:py-20 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 items-center">
           

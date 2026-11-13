@@ -2,15 +2,15 @@ import React from 'react';
 
 export const Method: React.FC = () => {
   return (
-    <section id="metodo" className="py-12 sm:py-16 bg-white border-t border-gray-100">
+    <section id="metodo" className="py-12 sm:py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
-        {/* Center: Composition of 4 Books (img03.png) */}
-        <div className="overflow-hidden rounded-2xl sm:rounded-3xl shadow-sm border border-gray-100 mb-10 sm:mb-12">
+        {/* Center: Composition of 4 Books (img03.png) - Sem borda ou contorno, exatamente igual ao original */}
+        <div className="max-w-5xl mx-auto mb-10 sm:mb-12">
           <img
             src="/assets/img03.png"
             alt="Criando as Marcas do Futuro - Método A2M SigniTelling (4 Volumes)"
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-contain block mx-auto"
             loading="lazy"
             width={1920}
             height={1080}

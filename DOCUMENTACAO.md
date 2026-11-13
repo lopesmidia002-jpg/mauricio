@@ -166,6 +166,7 @@ O assistente opera em formato JSON nativo e inclui:
 ---
 
 ## 8. Acessibilidade, Responsividade e Fidelidade Estrita ao PDF Oficial
+- **Remoção de Linhas de Contorno das Imagens**: Todas as linhas, bordas (`border-gray-100`) ou contornos de container foram eliminados da imagem dos 4 livros (`img03.png`) e foto de leitura (`img02.png`), permitindo que a arte se funda organicamente com o fundo branco da página, reproduzindo 1:1 o layout do PDF original.
 - **Hero em Sangria Total (Como no Original)**: A barra de navegação superior foi oculta e a fotografia monumental da obra (`img01.png`) foi expandida para ocupar 100% da largura da tela (sangria total, sem margens ou bordas), abrindo a página de forma contínua e imersiva exatamente como no documento original.
 - **Fidelidade 1:1 ao Arquivo `LANDING PAGE LIVRO.pdf`**: Todo o design da página foi calibrado para corresponder com exatidão à diagramação do documento oficial: fundo branco editorial (`#ffffff`), tipografia limpa de alto contraste, bloco escuro exclusivo para a seção do Assistente AI (`#151922`), ausência de balões obstrutivos sobre imagens e alinhamento idêntico de textos, parágrafos, termos e marcas.
 - **Exibição Fotográfica Limpa e Desobstruída**: Todas as 6 imagens oficiais (`img01.png` a `img06.png`) ocupam seus lugares originais sem balões ou cartões flutuantes sobrepostos, garantindo total visualização dos 4 livros, da foto de leitura e do retrato do autor tanto em mobile quanto no desktop.
