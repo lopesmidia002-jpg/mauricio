@@ -157,3 +157,14 @@ O assistente opera em formato JSON nativo e inclui:
 - **Limites e Termos Legais**:
   - 4 limites fundamentais declarados (não-determinismo, impossibilidade de maquiar operação fraca, conformidade em profissões regulamentadas e privacidade de dados).
   - 10 termos integrais de uso e licenciamento com foro em São Paulo/SP e canal oficial `mauricio.sarmento@espm.br`.
+
+---
+
+## 8. Acessibilidade, Responsividade e Mobile UX
+- **Carrossel Infinito de Marcas (Marquee)**: A seção de projetos do autor exibe todas as marcas (Nike, Meta, Ford, Havaianas, Nestlé, Budweiser, etc.) em uma faixa horizontal contínua e infinita, com máscaras de degradê nas laterais e pausa automática ao passar o cursor (`pause-hover`).
+- **Barra de Navegação em Cápsula Flutuante**: O cabeçalho desktop adota o padrão de cápsula suspensa (`rounded-2xl` com glassmorphism de 24px e borda iluminada), com todos os itens de menu dispostos rigorosamente lado a lado em linha única (`whitespace-nowrap`), eliminando quebras indesejadas de palavras.
+- **Menu Mobile com Backdrop Blur**: Quando o menu hambúrguer é acionado em telas móveis, um overlay de tela cheia com efeito de embaçamento intenso (`backdrop-blur-xl`) e escurecimento (`bg-[#030917]/85`) é ativado, isolando o foco visual no menu.
+- **Scroll Lock**: O scroll do `body` é bloqueado automaticamente enquanto o menu móvel estiver aberto para prevenir rolagem acidental do fundo.
+- **Fechamento Acessível**: O menu fecha ao clicar no fundo embaçado, ao selecionar qualquer link ou ao pressionar a tecla `Escape`.
+- **Contraste e Semântica**: Contraste visual aderente ao padrão WCAG AA/AAA, tags semânticas HTML5 (`header`, `main`, `section`, `blockquote`, `footer`) e textos alternativos em todas as imagens.
+- **Navegação por Teclado**: Suporte a foco visual com anel de destaque (`focus:ring-2`) em todos os botões e links.

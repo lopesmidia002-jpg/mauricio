@@ -125,23 +125,43 @@ export const AboutAuthor: React.FC = () => {
 
         </div>
 
-        {/* Client & Projects Portfolio Marquee / Grid */}
-        <div className="pt-8 border-t border-brand-cyan/15">
+        {/* Client & Projects Portfolio Infinite Marquee / Carrossel */}
+        <div className="pt-10 border-t border-brand-cyan/15">
           <div className="text-center mb-6">
-            <span className="text-xs font-mono font-bold uppercase tracking-wider text-slate-400">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-slate-400">
               Marcas que contaram com a participação de Maurício Sarmento em projetos e campanhas
             </span>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 max-w-5xl mx-auto">
-            {brands.map((brand, i) => (
-              <div
-                key={i}
-                className="px-4 py-2 rounded-xl bg-brand-card/60 hover:bg-brand-card border border-brand-cyan/20 hover:border-brand-amber/40 text-slate-200 hover:text-white text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-sm"
-              >
-                {brand}
-              </div>
-            ))}
+          <div className="relative w-full overflow-hidden py-2">
+            {/* Gradient Fade Masks on sides */}
+            <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-brand-secondary to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-brand-secondary to-transparent z-10 pointer-events-none" />
+
+            {/* Marquee Track (Infinite Seamless Loop) */}
+            <div className="flex animate-marquee pause-hover gap-3.5 sm:gap-4 items-center w-max">
+              {/* First Sequence */}
+              {brands.map((brand, i) => (
+                <div
+                  key={`brand-seq1-${i}`}
+                  className="whitespace-nowrap px-5 py-2.5 rounded-2xl bg-brand-card/70 hover:bg-brand-card border border-brand-cyan/25 hover:border-amber-400/60 text-slate-200 hover:text-white text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-md flex items-center gap-2 cursor-default select-none hover:scale-105"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-cyan/60" />
+                  <span>{brand}</span>
+                </div>
+              ))}
+
+              {/* Second Sequence (Repeated for seamless loop) */}
+              {brands.map((brand, i) => (
+                <div
+                  key={`brand-seq2-${i}`}
+                  className="whitespace-nowrap px-5 py-2.5 rounded-2xl bg-brand-card/70 hover:bg-brand-card border border-brand-cyan/25 hover:border-amber-400/60 text-slate-200 hover:text-white text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-md flex items-center gap-2 cursor-default select-none hover:scale-105"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-cyan/60" />
+                  <span>{brand}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 

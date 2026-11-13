@@ -17,13 +17,13 @@
 - **Status**: Concluído
 - **Entregáveis**:
   - Setup do projeto com Vite, React 18, TypeScript e Tailwind CSS v3 (paleta Deep Blue, Ciano Elétrico e Ouro/Âmbar).
-  - Componente `Navbar.tsx` com selo oficial `img06.png`, links responsivos e botão de compra.
+  - Componente `Navbar.tsx` em formato de dock flutuante (`rounded-2xl` com glassmorphism), itens de menu rigorosamente alinhados lado a lado em linha única (`whitespace-nowrap`), botões de ação e backdrop-blur com bloqueio de scroll no mobile.
   - Componente `Hero.tsx` com badge FGV, epígrafe do autor, CTAs estratégicos e mockup 3D `img05.png`.
   - Componente `ShowcaseGallery.tsx` integrando o painel arquitetônico monumental `img01.png`.
   - Componente `Manifesto.tsx` com foto tátil `img02.png`, reflexões sobre o mercado na era da IA e quadro comparativo (O que NÃO é vs O que É).
   - Componente `Method.tsx` com os 4 pilares estratégicos e visual `img03.png`.
   - Componente `TargetAudience.tsx` com os 4 perfis de leitor e fecho filosófico.
-  - Componente `AboutAuthor.tsx` com retrato `img04.png`, credenciais (FGV, ESPM, USP, NYFA) e portfólio de marcas (Nike, Ford, Meta, Havaianas, etc.).
+  - Componente `AboutAuthor.tsx` com retrato `img04.png`, credenciais (FGV, ESPM, USP, NYFA) e carrossel infinito (marquee) com todas as marcas lado a lado e pausa no hover.
   - Componente `BookConversion.tsx` com opções Capa Comum e Kindle na Amazon.
   - Componente `A2MAssistant.tsx` com terminal de código JSON interativo, cópia com 1 clique, toast feedback, 4 limites e 10 termos de uso.
   - Componente `Footer.tsx` com créditos, navegação, contato e copyright 2026.
