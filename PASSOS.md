@@ -61,4 +61,5 @@
   - Perfil de produção Docker Compose em `docker-compose.prod.yml` com limites de recursos (CPUs/Memória), rotação de logs e política de restart contínuo (`always`).
   - Criação do template de variáveis de ambiente de produção em `.env.example`.
   - Configuração do arquivo `.gitignore` com exclusão de dependências, artefatos de build, variáveis sensíveis e logs.
+  - Inicialização do padrão Impeccable (`/impeccable init`) com geração de `PRODUCT.md` alinhado à visão estratégica do autor.
   - Guia detalhado de deploy para VPS, Cloudflare Tunnel, AWS ou Railway documentado em `DOCUMENTACAO.md`.

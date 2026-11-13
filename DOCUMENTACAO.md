@@ -30,6 +30,7 @@ asserts/
 ├── package.json
 ├── PASSOS.md
 ├── postcss.config.js
+├── PRODUCT.md         # Contexto de produto e diretrizes duráveis (Impeccable)
 ├── public/
 │   ├── assets/
 │   │   ├── img01.png  # Galeria Arquitetônica / Showcase
