@@ -80,7 +80,7 @@ export const Navbar: React.FC = () => {
             
             {/* Left: Brand Identity & Shield Logo */}
             <a 
-              href="#" 
+              href="#livro" 
               onClick={() => setIsOpen(false)}
               className="flex items-center gap-3 shrink-0 group focus:outline-none focus:ring-2 focus:ring-brand-cyan/50 rounded-xl p-1"
             >

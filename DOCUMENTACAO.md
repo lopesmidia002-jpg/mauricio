@@ -93,9 +93,14 @@ asserts/
 
 ## 5. Instruções de Execução via Docker (100% Conteinerizado)
 
-### Ambiente de Desenvolvimento / Preview Local (Porta 8080)
+### Ciclo de Atualizações e Política Anti-Cache
+Como a aplicação opera em arquitetura conteinerizada com Nginx Alpine servindo os arquivos compilados pelo Vite:
+1. **Recompilação Necessária**: Toda alteração efetuada nos arquivos de código no host Windows (`src/`) requer o comando `docker compose up -d --build` para gerar o novo bundle e atualizar o container.
+2. **Prevenção Ativa de Cache**: O arquivo `nginx.conf` está configurado para emitir `Cache-Control: no-store, no-cache, max-age=0` nas rotas HTML (`/` e `/index.html`) e `Cache-Control: no-cache, must-revalidate` nos assets (`.js`, `.css`), garantindo que o navegador nunca fique preso a versões antigas em memória/disco.
+
+### Ambiente de Preview Local (Porta 8080)
 ```powershell
-docker compose up -d --build
+docker compose up -d --build --remove-orphans
 ```
 Acesse em: `http://localhost:8080`
 
@@ -161,6 +166,7 @@ O assistente opera em formato JSON nativo e inclui:
 ---
 
 ## 8. Acessibilidade, Responsividade e Mobile UX
+- **Desobstrução de Imagens no Mobile**: Em telas móveis, os balões/cards flutuantes que antes cobriam a maior parte das fotos (como os 4 livros no Método, o painel monumental no Showcase, o livro nas mãos no Manifesto e o retrato do autor) foram reposicionados responsivamente para baixo da imagem (`mt-3`), garantindo 100% de visibilidade fotográfica desimpedida no smartphone, ao mesmo tempo em que preservam a elegante sobreposição em vidro flutuante (`sm:absolute`) em tablets e desktops.
 - **Carrossel Infinito de Marcas (Marquee)**: A seção de projetos do autor exibe todas as marcas (Nike, Meta, Ford, Havaianas, Nestlé, Budweiser, etc.) em uma faixa horizontal contínua e infinita, com máscaras de degradê nas laterais e pausa automática ao passar o cursor (`pause-hover`).
 - **Barra de Navegação Incorporada ao Hero**: O cabeçalho foi integrado diretamente à atmosfera visual da seção Hero, eliminando o aspecto de cápsula solta. No topo da página, exibe um degradê suave que se funde perfeitamente à iluminação radial do Hero; ao rolar a página, transiciona para um glassmorphism escuro (`bg-[#030917]/95 backdrop-blur-2xl`) com borda sutil. Os itens de menu desktop são dispostos estritamente lado a lado em linha única (`whitespace-nowrap`), com espaçamento calibrado e prevenção ativa de colisões em qualquer largura de tela.
 - **Menu Mobile com Backdrop Blur**: Quando o menu hambúrguer é acionado em telas móveis, um overlay de tela cheia com efeito de embaçamento intenso (`backdrop-blur-xl`) e escurecimento (`bg-[#030917]/85`) é ativado, isolando o foco visual no menu.

@@ -11,11 +11,12 @@ O projeto integra a fundamentação teórica acadêmica da dissertação de mest
 - **Frontend Core**: React 18 com TypeScript e Vite.
 - **Navegação & Header**: Cabeçalho de alta precisão incorporado diretamente à atmosfera visual do Hero, com degradê contínuo no topo e transição suave para glassmorphism profundo no scroll. Links rigorosamente alinhados lado a lado sem sobreposição de textos, e menu mobile com backdrop-blur-xl e body scroll lock.
 - **Portfólio de Marcas**: Carrossel infinito horizontal (*marquee* contínuo com pausa no hover e degradês de transição lateral) com as 13 marcas atendidas pelo autor.
+- **Cards de Imagem Responsivos no Mobile**: Eliminação da sobreposição intrusiva de balões sobre as fotos no mobile, posicionando os textos explicativos abaixo da imagem (`mt-3`) no smartphone e mantendo o glassmorphism flutuante no desktop.
 - **Estilização**: Tailwind CSS v3 com paleta customizada Deep Blue (`#030917`, `#071329`, `rgba(13, 33, 68, 0.55)`), ciano elétrico (`#38BDF8`) e âmbar/ouro (`#F59E0B`).
 - **Fontes**: *Plus Jakarta Sans* (títulos de autoridade), *Inter* (corpo de texto de alta legibilidade) e *JetBrains Mono* (terminal de código JSON).
 - **Ícones**: Lucide React.
 - **Infraestrutura**: 100% conteinerizado em Docker com imagem multi-stage (`node:20-alpine` para build e `nginx:1.27-alpine` como runtime de alto desempenho).
-- **Ambiente Local / Preview**: Mapeado na porta `http://localhost:8080`.
+- **Ambiente Local / Preview**: Mapeado na porta `http://localhost:8080` com política anti-cache ativa (`no-store, no-cache` e `no-cache, must-revalidate`) para evitar retenção de assets antigos no navegador.
 - **Governança de Design (Impeccable)**: Inicializado via `/impeccable init` com documentação durável de produto em `PRODUCT.md` e guia de referência em `README.md`.
 - **CI/CD e Deploy de Produção**: Pipeline do GitHub Actions configurado em `.github/workflows/deploy.yml`, perfil de produção em `docker-compose.prod.yml` e arquivo `.gitignore` configurado.
 

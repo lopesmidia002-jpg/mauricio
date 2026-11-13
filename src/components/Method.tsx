@@ -70,17 +70,21 @@ export const Method: React.FC = () => {
         {/* Visual: Composition of 4 Books (img03.png) */}
         <div className="mb-20">
           <div className="relative rounded-3xl overflow-hidden border border-brand-cyan/30 shadow-2xl shadow-cyan-950/70 bg-gradient-to-b from-brand-card to-brand-navy p-3 sm:p-5 group">
-            <img
-              src="/assets/img03.png"
-              alt="Composição dos 4 exemplares de Criando as Marcas do Futuro - Método A2M SigniTelling"
-              className="w-full h-auto max-h-[500px] object-cover rounded-2xl group-hover:scale-[1.01] transition-transform duration-700 filter brightness-95"
-              loading="lazy"
-              width={1920}
-              height={1080}
-            />
-            {/* Cinematic overlay card */}
-            <div className="absolute bottom-6 left-6 right-6 sm:left-10 sm:right-auto glass-card p-4 sm:p-5 rounded-2xl border border-brand-cyan/40 backdrop-blur-md max-w-lg shadow-2xl">
-              <span className="text-[11px] font-mono font-bold text-brand-amber uppercase tracking-wider block mb-1">
+            <div className="relative overflow-hidden rounded-2xl">
+              <img
+                src="/assets/img03.png"
+                alt="Composição dos 4 exemplares de Criando as Marcas do Futuro - Método A2M SigniTelling"
+                className="w-full h-auto max-h-[500px] object-cover rounded-2xl group-hover:scale-[1.01] transition-transform duration-700 filter brightness-95"
+                loading="lazy"
+                width={1920}
+                height={1080}
+              />
+              <div className="hidden sm:block absolute inset-0 bg-gradient-to-t from-brand-primary/60 via-transparent to-transparent pointer-events-none" />
+            </div>
+
+            {/* Cinematic quote card: below image on mobile (zero obstruction), floating overlay on tablet/desktop */}
+            <div className="mt-3 sm:mt-0 sm:absolute sm:bottom-6 sm:left-8 sm:right-auto sm:max-w-lg glass-card p-3.5 sm:p-5 rounded-2xl border border-brand-cyan/40 backdrop-blur-md shadow-2xl">
+              <span className="text-[11px] sm:text-xs font-mono font-bold text-brand-amber uppercase tracking-wider block mb-1">
                 Fundamentação & Rigor Metodológico
               </span>
               <p className="text-white text-xs sm:text-sm font-medium leading-relaxed">

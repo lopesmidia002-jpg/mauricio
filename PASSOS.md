@@ -28,6 +28,7 @@
   - Componente `A2MAssistant.tsx` com terminal de código JSON interativo, cópia com 1 clique, toast feedback, 4 limites e 10 termos de uso.
   - Componente `Footer.tsx` com créditos, navegação, contato e copyright 2026.
   - Ajuste de Refinamento: Eliminação de colisões de texto na navegação desktop e incorporação fluida da barra ao fundo radial do Hero com degradê de fusão.
+  - Ajuste Mobile UX em Cards de Imagem: Reposicionamento responsivo dos balões informativos nos cards visuais (`Method.tsx`, `ShowcaseGallery.tsx`, `Manifesto.tsx` e `AboutAuthor.tsx`). No mobile, os balões se posicionam logo abaixo das imagens (`mt-3`), desobstruindo 100% das fotos sem cobrir os 4 livros ou painéis, mantendo a sobreposição flutuante elegante apenas no desktop (`sm:absolute`).
 
 ---
 
@@ -35,11 +36,12 @@
 - **Status**: Concluído
 - **Entregáveis**:
   - `Dockerfile` multi-stage (`node:20-alpine` para build e `nginx:1.27-alpine` para runtime com compressão gzip e cache).
-  - `nginx.conf` com suporte a SPA e cabeçalhos de segurança.
-  - `docker-compose.yml` mapeando a porta `8080:80` com healthcheck ativo.
+  - `nginx.conf` com suporte a SPA, cabeçalhos de segurança e política anti-cache para preview local (`no-store, no-cache` para HTML e `no-cache, must-revalidate` para assets JS/CSS, garantindo que atualizações reflitam instantaneamente).
+  - `docker-compose.yml` mapeando a porta `8080:80` com healthcheck ativo e limpeza de containers órfãos (`--remove-orphans`).
   - `.dockerignore` configurado.
   - Build e execução do container `mauricio-landing-page` via `docker compose`.
-  - Verificação de resposta HTTP 200 em `http://localhost:8080`.
+  - Verificação de resposta HTTP 200 em `http://localhost:8080` com novos cabeçalhos de revalidação ativa.
+  - Diagnóstico documentado: esclarecimento do ciclo de vida em Docker estático e eliminação de cache retido pelo navegador.
 
 ---
 

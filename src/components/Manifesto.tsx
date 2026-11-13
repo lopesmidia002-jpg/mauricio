@@ -33,20 +33,22 @@ export const Manifesto: React.FC = () => {
           
           {/* Visual: Book Held in Hands (img02.png) */}
           <div className="lg:col-span-5 relative group">
-            <div className="relative rounded-3xl overflow-hidden border border-brand-cyan/30 shadow-2xl shadow-cyan-950/70 bg-gradient-to-br from-brand-card to-brand-navy p-3">
-              <img
-                src="/assets/img02.png"
-                alt="Leitor segurando o livro Criando as Marcas do Futuro"
-                className="w-full h-auto rounded-2xl object-cover group-hover:scale-[1.02] transition-transform duration-500 filter brightness-95"
-                loading="lazy"
-                width={600}
-                height={600}
-              />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-brand-primary/80 via-transparent to-transparent pointer-events-none" />
+            <div className="relative rounded-3xl overflow-hidden border border-brand-cyan/30 shadow-2xl shadow-cyan-950/70 bg-gradient-to-br from-brand-card to-brand-navy p-3 sm:p-4">
+              <div className="relative overflow-hidden rounded-2xl">
+                <img
+                  src="/assets/img02.png"
+                  alt="Leitor segurando o livro Criando as Marcas do Futuro"
+                  className="w-full h-auto rounded-2xl object-cover group-hover:scale-[1.02] transition-transform duration-500 filter brightness-95"
+                  loading="lazy"
+                  width={600}
+                  height={600}
+                />
+                <div className="hidden sm:block absolute inset-0 rounded-2xl bg-gradient-to-t from-brand-primary/80 via-transparent to-transparent pointer-events-none" />
+              </div>
               
-              {/* Overlay note */}
-              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-card border border-brand-cyan/30 backdrop-blur-md">
-                <p className="text-xs sm:text-sm text-slate-200 italic">
+              {/* Overlay note: below image on mobile (zero obstruction), floating overlay on tablet/desktop */}
+              <div className="mt-3 sm:mt-0 sm:absolute sm:bottom-6 sm:left-6 sm:right-6 p-3.5 sm:p-4 rounded-xl glass-card border border-brand-cyan/30 backdrop-blur-md">
+                <p className="text-xs sm:text-sm text-slate-200 italic leading-relaxed">
                   "Quem lê o livro entende por que ele interrompe um salto abstrato, por que exige prova e por que recomenda renunciar."
                 </p>
               </div>

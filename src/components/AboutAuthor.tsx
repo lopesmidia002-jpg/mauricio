@@ -35,19 +35,21 @@ export const AboutAuthor: React.FC = () => {
           
           {/* Column Left: Author Portrait (img04.png) */}
           <div className="lg:col-span-5 relative group">
-            <div className="relative rounded-3xl overflow-hidden border border-brand-cyan/30 shadow-2xl shadow-cyan-950/70 bg-gradient-to-b from-brand-card to-brand-navy p-3">
-              <img
-                src="/assets/img04.png"
-                alt="Maurício Sarmento - Autor do livro Criando as Marcas do Futuro"
-                className="w-full h-auto rounded-2xl object-cover group-hover:scale-[1.02] transition-transform duration-500 filter brightness-95"
-                loading="lazy"
-                width={600}
-                height={600}
-              />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-brand-primary/80 via-transparent to-transparent pointer-events-none" />
+            <div className="relative rounded-3xl overflow-hidden border border-brand-cyan/30 shadow-2xl shadow-cyan-950/70 bg-gradient-to-b from-brand-card to-brand-navy p-3 sm:p-4">
+              <div className="relative overflow-hidden rounded-2xl">
+                <img
+                  src="/assets/img04.png"
+                  alt="Maurício Sarmento - Autor do livro Criando as Marcas do Futuro"
+                  className="w-full h-auto rounded-2xl object-cover group-hover:scale-[1.02] transition-transform duration-500 filter brightness-95"
+                  loading="lazy"
+                  width={600}
+                  height={600}
+                />
+                <div className="hidden sm:block absolute inset-0 rounded-2xl bg-gradient-to-t from-brand-primary/80 via-transparent to-transparent pointer-events-none" />
+              </div>
               
-              {/* Bottom tag */}
-              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-card border border-brand-cyan/30 backdrop-blur-md">
+              {/* Bottom tag: below portrait on mobile (zero obstruction), floating overlay on tablet/desktop */}
+              <div className="mt-3 sm:mt-0 sm:absolute sm:bottom-6 sm:left-6 sm:right-6 p-3.5 sm:p-4 rounded-xl glass-card border border-brand-cyan/30 backdrop-blur-md">
                 <div className="font-heading font-bold text-white text-base">Maurício Sarmento</div>
                 <div className="text-xs text-brand-cyan font-mono">Estrategista, Professor & Diretor</div>
               </div>

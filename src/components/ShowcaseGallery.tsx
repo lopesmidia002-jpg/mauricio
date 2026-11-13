@@ -24,8 +24,8 @@ export const ShowcaseGallery: React.FC = () => {
         </div>
 
         {/* Monumental Billboard Display (img01.png) */}
-        <div className="relative group rounded-3xl overflow-hidden border border-brand-cyan/30 shadow-2xl shadow-cyan-950/60 bg-gradient-to-b from-brand-card to-brand-primary">
-          <div className="relative aspect-[16/9] w-full overflow-hidden">
+        <div className="relative group rounded-3xl overflow-hidden border border-brand-cyan/30 shadow-2xl shadow-cyan-950/60 bg-gradient-to-b from-brand-card to-brand-primary p-3 sm:p-5">
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl">
             <img
               src="/assets/img01.png"
               alt="Painel arquitetônico monumental - Criando as Marcas do Futuro por Maurício Sarmento"
@@ -36,17 +36,17 @@ export const ShowcaseGallery: React.FC = () => {
             />
             {/* Cinematic overlay gradients */}
             <div className="absolute inset-0 bg-gradient-to-t from-brand-primary via-transparent to-black/20" />
-            
-            {/* Floating Tag in the visual */}
-            <div className="absolute bottom-6 left-6 right-6 sm:left-8 sm:right-auto glass-card px-5 py-3 rounded-2xl border border-brand-cyan/40 backdrop-blur-md max-w-md shadow-2xl">
-              <div className="flex items-center gap-2 text-brand-amber font-mono text-xs font-bold uppercase tracking-wider mb-1">
-                <Sparkles className="w-3.5 h-3.5 text-brand-amber" />
-                <span>Espaço de Expressão & Visão Estratégica</span>
-              </div>
-              <p className="text-white text-xs sm:text-sm font-medium leading-snug">
-                "Não basta ter uma mensagem; é preciso ocupar o espaço com legitimidade, verdade operacional e potência narrativa."
-              </p>
+          </div>
+          
+          {/* Floating Tag: below image on mobile (zero obstruction), floating overlay on tablet/desktop */}
+          <div className="mt-3 sm:mt-0 sm:absolute sm:bottom-8 sm:left-8 sm:right-auto glass-card p-3.5 sm:px-5 sm:py-3 rounded-2xl border border-brand-cyan/40 backdrop-blur-md sm:max-w-md shadow-2xl">
+            <div className="flex items-center gap-2 text-brand-amber font-mono text-xs font-bold uppercase tracking-wider mb-1">
+              <Sparkles className="w-3.5 h-3.5 text-brand-amber" />
+              <span>Espaço de Expressão & Visão Estratégica</span>
             </div>
+            <p className="text-white text-xs sm:text-sm font-medium leading-snug">
+              "Não basta ter uma mensagem; é preciso ocupar o espaço com legitimidade, verdade operacional e potência narrativa."
+            </p>
           </div>
         </div>
 
