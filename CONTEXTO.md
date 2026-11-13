@@ -10,7 +10,7 @@ O projeto integra a fundamentação teórica acadêmica da dissertação de mest
 ## 2. Tecnologias e Arquitetura
 - **Frontend Core**: React 18 com TypeScript e Vite.
 - **Fidelidade Visual 1:1 ao PDF Oficial**: Diagramação editorial limpa com fundo branco (`#ffffff`), tipografia refinada de alto contraste, bloco escuro exclusivo na seção do Assistente AI (`#151922`), ausência de balões sobre as fotos e disposição idêntica de todos os textos, imagens e seções de `LANDING PAGE LIVRO.pdf`.
-- **Navegação & Header**: Cabeçalho sutil translúcido com glassmorphism claro (`bg-white/95 backdrop-blur-md`), links diretos para todas as seções e acesso rápido à Amazon.
+- **Abertura Hero em Sangria Total**: Barra superior oculta para reprodução exata da experiência do original, com a imagem monumental da obra (`img01.png`) ocupando 100% da largura da tela sem margens laterais ou recortes.
 - **Estilização**: Tailwind CSS v3 com paleta editorial autêntica do autor (branco puro, cinza suave `#EFEFEF`, carvão `#151922`, azul ardósia `#9BB2C9` no botão de compra).
 - **Fontes**: *Plus Jakarta Sans* (títulos de autoridade), *Inter* (corpo de texto de alta legibilidade) e *JetBrains Mono* (terminal de código JSON).
 - **Ícones**: Lucide React.

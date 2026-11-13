@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navbar } from './components/Navbar';
 import { ShowcaseGallery } from './components/ShowcaseGallery';
 import { Manifesto } from './components/Manifesto';
 import { Method } from './components/Method';
@@ -11,7 +10,6 @@ import { Footer } from './components/Footer';
 export const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 flex flex-col font-sans selection:bg-slate-200 selection:text-gray-900">
-      <Navbar />
       <main className="flex-grow">
         <ShowcaseGallery />
         <Manifesto />
