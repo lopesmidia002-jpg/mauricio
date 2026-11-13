@@ -9,9 +9,7 @@ O projeto integra a fundamentação teórica acadêmica da dissertação de mest
 
 ## 2. Tecnologias e Arquitetura
 - **Frontend Core**: React 18 com TypeScript e Vite.
-- **Navegação & Header**: Cápsula flutuante suspensa (`rounded-2xl` com glassmorphism), links alinhados estritamente lado a lado sem quebra de linhas (`whitespace-nowrap`) e menu mobile com backdrop-blur-xl e scroll lock.
-- **Portfólio de Marcas**: Carrossel infinito horizontal (*marquee* contínuo com pausa no hover e degradês de transição lateral) com as 13 marcas atendidas pelo autor.
-- **Navegação & Header**: Cápsula flutuante suspensa (`rounded-2xl` com glassmorphism), links alinhados estritamente lado a lado sem quebra de linhas (`whitespace-nowrap`) e menu mobile com backdrop-blur-xl e scroll lock.
+- **Navegação & Header**: Cabeçalho de alta precisão incorporado diretamente à atmosfera visual do Hero, com degradê contínuo no topo e transição suave para glassmorphism profundo no scroll. Links rigorosamente alinhados lado a lado sem sobreposição de textos, e menu mobile com backdrop-blur-xl e body scroll lock.
 - **Portfólio de Marcas**: Carrossel infinito horizontal (*marquee* contínuo com pausa no hover e degradês de transição lateral) com as 13 marcas atendidas pelo autor.
 - **Estilização**: Tailwind CSS v3 com paleta customizada Deep Blue (`#030917`, `#071329`, `rgba(13, 33, 68, 0.55)`), ciano elétrico (`#38BDF8`) e âmbar/ouro (`#F59E0B`).
 - **Fontes**: *Plus Jakarta Sans* (títulos de autoridade), *Inter* (corpo de texto de alta legibilidade) e *JetBrains Mono* (terminal de código JSON).
