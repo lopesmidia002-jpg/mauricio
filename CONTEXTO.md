@@ -9,10 +9,9 @@ O projeto integra a fundamentação teórica acadêmica da dissertação de mest
 
 ## 2. Tecnologias e Arquitetura
 - **Frontend Core**: React 18 com TypeScript e Vite.
-- **Navegação & Header**: Cabeçalho de alta precisão incorporado diretamente à atmosfera visual do Hero, com degradê contínuo no topo e transição suave para glassmorphism profundo no scroll. Links rigorosamente alinhados lado a lado sem sobreposição de textos, e menu mobile com backdrop-blur-xl e body scroll lock.
-- **Portfólio de Marcas**: Carrossel infinito horizontal (*marquee* contínuo com pausa no hover e degradês de transição lateral) com as 13 marcas atendidas pelo autor.
-- **Cards de Imagem Responsivos no Mobile**: Eliminação da sobreposição intrusiva de balões sobre as fotos no mobile, posicionando os textos explicativos abaixo da imagem (`mt-3`) no smartphone e mantendo o glassmorphism flutuante no desktop.
-- **Estilização**: Tailwind CSS v3 com paleta customizada Deep Blue (`#030917`, `#071329`, `rgba(13, 33, 68, 0.55)`), ciano elétrico (`#38BDF8`) e âmbar/ouro (`#F59E0B`).
+- **Fidelidade Visual 1:1 ao PDF Oficial**: Diagramação editorial limpa com fundo branco (`#ffffff`), tipografia refinada de alto contraste, bloco escuro exclusivo na seção do Assistente AI (`#151922`), ausência de balões sobre as fotos e disposição idêntica de todos os textos, imagens e seções de `LANDING PAGE LIVRO.pdf`.
+- **Navegação & Header**: Cabeçalho sutil translúcido com glassmorphism claro (`bg-white/95 backdrop-blur-md`), links diretos para todas as seções e acesso rápido à Amazon.
+- **Estilização**: Tailwind CSS v3 com paleta editorial autêntica do autor (branco puro, cinza suave `#EFEFEF`, carvão `#151922`, azul ardósia `#9BB2C9` no botão de compra).
 - **Fontes**: *Plus Jakarta Sans* (títulos de autoridade), *Inter* (corpo de texto de alta legibilidade) e *JetBrains Mono* (terminal de código JSON).
 - **Ícones**: Lucide React.
 - **Infraestrutura**: 100% conteinerizado em Docker com imagem multi-stage (`node:20-alpine` para build e `nginx:1.27-alpine` como runtime de alto desempenho).

@@ -165,10 +165,10 @@ O assistente opera em formato JSON nativo e inclui:
 
 ---
 
-## 8. Acessibilidade, Responsividade e Mobile UX
-- **Desobstrução de Imagens no Mobile**: Em telas móveis, os balões/cards flutuantes que antes cobriam a maior parte das fotos (como os 4 livros no Método, o painel monumental no Showcase, o livro nas mãos no Manifesto e o retrato do autor) foram reposicionados responsivamente para baixo da imagem (`mt-3`), garantindo 100% de visibilidade fotográfica desimpedida no smartphone, ao mesmo tempo em que preservam a elegante sobreposição em vidro flutuante (`sm:absolute`) em tablets e desktops.
-- **Carrossel Infinito de Marcas (Marquee)**: A seção de projetos do autor exibe todas as marcas (Nike, Meta, Ford, Havaianas, Nestlé, Budweiser, etc.) em uma faixa horizontal contínua e infinita, com máscaras de degradê nas laterais e pausa automática ao passar o cursor (`pause-hover`).
-- **Barra de Navegação Incorporada ao Hero**: O cabeçalho foi integrado diretamente à atmosfera visual da seção Hero, eliminando o aspecto de cápsula solta. No topo da página, exibe um degradê suave que se funde perfeitamente à iluminação radial do Hero; ao rolar a página, transiciona para um glassmorphism escuro (`bg-[#030917]/95 backdrop-blur-2xl`) com borda sutil. Os itens de menu desktop são dispostos estritamente lado a lado em linha única (`whitespace-nowrap`), com espaçamento calibrado e prevenção ativa de colisões em qualquer largura de tela.
+## 8. Acessibilidade, Responsividade e Fidelidade Estrita ao PDF Oficial
+- **Fidelidade 1:1 ao Arquivo `LANDING PAGE LIVRO.pdf`**: Todo o design da página foi calibrado para corresponder com exatidão à diagramação do documento oficial: fundo branco editorial (`#ffffff`), tipografia limpa de alto contraste, bloco escuro exclusivo para a seção do Assistente AI (`#151922`), ausência de balões obstrutivos sobre imagens e alinhamento idêntico de textos, parágrafos, termos e marcas.
+- **Exibição Fotográfica Limpa e Desobstruída**: Todas as 6 imagens oficiais (`img01.png` a `img06.png`) ocupam seus lugares originais sem balões ou cartões flutuantes sobrepostos, garantindo total visualização dos 4 livros, da foto de leitura e do retrato do autor tanto em mobile quanto no desktop.
+- **Barra de Navegação Minimalista**: O cabeçalho foi redesenhado em tom claro translúcido (`bg-white/90 backdrop-blur-md`) com âncoras para todas as seções e acesso rápido à compra na Amazon.
 - **Menu Mobile com Backdrop Blur**: Quando o menu hambúrguer é acionado em telas móveis, um overlay de tela cheia com efeito de embaçamento intenso (`backdrop-blur-xl`) e escurecimento (`bg-[#030917]/85`) é ativado, isolando o foco visual no menu.
 - **Scroll Lock**: O scroll do `body` é bloqueado automaticamente enquanto o menu móvel estiver aberto para prevenir rolagem acidental do fundo.
 - **Fechamento Acessível**: O menu fecha ao clicar no fundo embaçado, ao selecionar qualquer link ou ao pressionar a tecla `Escape`.
