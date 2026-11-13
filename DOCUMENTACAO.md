@@ -41,6 +41,7 @@ asserts/
 │   │   └── img06.png  # Escudo Oficial / Navbar e Assistente AI
 │   ├── robots.txt     # Rastreamento de busca e IA (GEO)
 │   └── sitemap.xml    # Estrutura de rotas e âncoras canônicas
+├── README.md          # Documento de apresentação e guia de início rápido
 ├── src/
 │   ├── App.tsx
 │   ├── components/

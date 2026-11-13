@@ -62,4 +62,5 @@
   - Criação do template de variáveis de ambiente de produção em `.env.example`.
   - Configuração do arquivo `.gitignore` com exclusão de dependências, artefatos de build, variáveis sensíveis e logs.
   - Inicialização do padrão Impeccable (`/impeccable init`) com geração de `PRODUCT.md` alinhado à visão estratégica do autor.
+  - Criação do `README.md` oficial com visão geral, arquitetura, comandos Docker e guia da metodologia A2M.
   - Guia detalhado de deploy para VPS, Cloudflare Tunnel, AWS ou Railway documentado em `DOCUMENTACAO.md`.

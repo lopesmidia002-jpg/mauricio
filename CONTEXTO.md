@@ -14,7 +14,7 @@ O projeto integra a fundamentação teórica acadêmica da dissertação de mest
 - **Ícones**: Lucide React.
 - **Infraestrutura**: 100% conteinerizado em Docker com imagem multi-stage (`node:20-alpine` para build e `nginx:1.27-alpine` como runtime de alto desempenho).
 - **Ambiente Local / Preview**: Mapeado na porta `http://localhost:8080`.
-- **Governança de Design (Impeccable)**: Inicializado via `/impeccable init` com documentação durável de produto em `PRODUCT.md`.
+- **Governança de Design (Impeccable)**: Inicializado via `/impeccable init` com documentação durável de produto em `PRODUCT.md` e guia de referência em `README.md`.
 - **CI/CD e Deploy de Produção**: Pipeline do GitHub Actions configurado em `.github/workflows/deploy.yml`, perfil de produção em `docker-compose.prod.yml` e arquivo `.gitignore` configurado.
 
 ---
