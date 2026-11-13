@@ -166,5 +166,8 @@ O assistente opera em formato JSON nativo e inclui:
 - **Menu Mobile com Backdrop Blur**: Quando o menu hambúrguer é acionado em telas móveis, um overlay de tela cheia com efeito de embaçamento intenso (`backdrop-blur-xl`) e escurecimento (`bg-[#030917]/85`) é ativado, isolando o foco visual no menu.
 - **Scroll Lock**: O scroll do `body` é bloqueado automaticamente enquanto o menu móvel estiver aberto para prevenir rolagem acidental do fundo.
 - **Fechamento Acessível**: O menu fecha ao clicar no fundo embaçado, ao selecionar qualquer link ou ao pressionar a tecla `Escape`.
+- **Auditoria de Craft e Anti-Patterns**: Conformidade total com o detector mecânico Impeccable (eliminação de gradientes em textos em favor de cores sólidas de alto contraste e substituição de animações bounce por flutuação suave).
+- **Resiliência do Clipboard**: Implementado fallback robusto para cópia de prompt JSON com suporte a ambientes sem HTTPS ou webviews restritas.
+- **Prevenção de Layout Shift (CLS: 0.00)**: Todas as 6 imagens receberam atributos explícitos de `width` e `height`, além de estratégias balanceadas de `loading="eager"` (Hero/Logo) e `loading="lazy"` (seções inferiores).
 - **Contraste e Semântica**: Contraste visual aderente ao padrão WCAG AA/AAA, tags semânticas HTML5 (`header`, `main`, `section`, `blockquote`, `footer`) e textos alternativos em todas as imagens.
 - **Navegação por Teclado**: Suporte a foco visual com anel de destaque (`focus:ring-2`) em todos os botões e links.

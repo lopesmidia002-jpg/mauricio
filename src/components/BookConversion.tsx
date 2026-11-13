@@ -36,6 +36,8 @@ export const BookConversion: React.FC = () => {
                 alt="Criando as Marcas do Futuro - Capa Comum e Kindle"
                 className="relative z-10 w-full max-w-[340px] sm:max-w-[380px] h-auto object-contain filter drop-shadow-[0_25px_40px_rgba(0,0,0,0.85)] group-hover:scale-[1.03] transition-transform duration-500"
                 loading="lazy"
+                width={380}
+                height={480}
               />
             </div>
           </div>

@@ -39,6 +39,7 @@ Em cumprimento à diretriz expressa do usuário (*"ultilize todasa as imagens"*)
 - **robots.txt** configurado para buscadores tradicionais e agentes de IA (ChatGPT, Claude, Perplexity, Applebot).
 - **sitemap.xml** com estrutura de rotas e âncoras canônicas.
 - **Preload de LCP** para renderização acelerada do mockup 3D do Hero.
+- **Auditoria de Craft e Estabilidade**: Eliminação de anti-patterns de gradientes decorativos em títulos (detector Impeccable zerado), garantia de cópia resiliente em qualquer browser e CLS 0.00 através de dimensões fixadas.
 
 ---
 

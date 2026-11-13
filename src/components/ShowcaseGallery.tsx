@@ -31,6 +31,8 @@ export const ShowcaseGallery: React.FC = () => {
               alt="Painel arquitetônico monumental - Criando as Marcas do Futuro por Maurício Sarmento"
               className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-700 filter brightness-95 contrast-105"
               loading="lazy"
+              width={1920}
+              height={1080}
             />
             {/* Cinematic overlay gradients */}
             <div className="absolute inset-0 bg-gradient-to-t from-brand-primary via-transparent to-black/20" />

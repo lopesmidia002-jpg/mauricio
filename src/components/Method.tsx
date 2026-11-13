@@ -58,7 +58,7 @@ export const Method: React.FC = () => {
           </div>
           <h2 className="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
             A Arquitetura do <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan via-sky-300 to-amber-400">
+            <span className="text-brand-cyan">
               Método A2M SigniTelling™
             </span>
           </h2>
@@ -75,6 +75,8 @@ export const Method: React.FC = () => {
               alt="Composição dos 4 exemplares de Criando as Marcas do Futuro - Método A2M SigniTelling"
               className="w-full h-auto max-h-[500px] object-cover rounded-2xl group-hover:scale-[1.01] transition-transform duration-700 filter brightness-95"
               loading="lazy"
+              width={1920}
+              height={1080}
             />
             {/* Cinematic overlay card */}
             <div className="absolute bottom-6 left-6 right-6 sm:left-10 sm:right-auto glass-card p-4 sm:p-5 rounded-2xl border border-brand-cyan/40 backdrop-blur-md max-w-lg shadow-2xl">

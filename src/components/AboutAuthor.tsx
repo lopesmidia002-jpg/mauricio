@@ -41,6 +41,8 @@ export const AboutAuthor: React.FC = () => {
                 alt="Maurício Sarmento - Autor do livro Criando as Marcas do Futuro"
                 className="w-full h-auto rounded-2xl object-cover group-hover:scale-[1.02] transition-transform duration-500 filter brightness-95"
                 loading="lazy"
+                width={600}
+                height={600}
               />
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-brand-primary/80 via-transparent to-transparent pointer-events-none" />
               

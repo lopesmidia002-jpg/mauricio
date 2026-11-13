@@ -19,7 +19,7 @@ export const Manifesto: React.FC = () => {
           </div>
           <h2 className="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
             Produzir Ficou Mais Fácil. <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">
+            <span className="text-amber-400">
               Escolher Ficou Mais Valioso.
             </span>
           </h2>
@@ -39,6 +39,8 @@ export const Manifesto: React.FC = () => {
                 alt="Leitor segurando o livro Criando as Marcas do Futuro"
                 className="w-full h-auto rounded-2xl object-cover group-hover:scale-[1.02] transition-transform duration-500 filter brightness-95"
                 loading="lazy"
+                width={600}
+                height={600}
               />
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-brand-primary/80 via-transparent to-transparent pointer-events-none" />
               

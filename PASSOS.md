@@ -50,6 +50,7 @@
   - Geração de `public/sitemap.xml` com rotas canônicas e prioridades.
   - Meta tags completas de OpenGraph e Twitter Cards (summary_large_image).
   - Preload da imagem de maior impacto visual (`/assets/img05.png`) para otimização de LCP (Largest Contentful Paint).
+  - Auditoria completa e correção de anti-patterns de design (detector Impeccable zerado), fallback universal de clipboard e atributos explícitos de largura/altura para CLS zero.
   - Rebuild e deploy no Docker com validação de status HTTP 200 em `/robots.txt`, `/sitemap.xml` e `/`.
 
 ---

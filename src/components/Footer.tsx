@@ -25,6 +25,8 @@ export const Footer: React.FC = () => {
                   alt="A2M SigniTelling Logo"
                   className="w-full h-full object-contain"
                   loading="lazy"
+                  width={40}
+                  height={40}
                 />
               </div>
               <div>

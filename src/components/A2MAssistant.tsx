@@ -24,7 +24,20 @@ export const A2MAssistant: React.FC = () => {
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(A2M_SYSTEM_PROMPT_STRING);
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(A2M_SYSTEM_PROMPT_STRING);
+      } else {
+        const textArea = document.createElement('textarea');
+        textArea.value = A2M_SYSTEM_PROMPT_STRING;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-999999px';
+        textArea.style.top = '-999999px';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+      }
       setCopied(true);
       setShowToast(true);
       setTimeout(() => setCopied(false), 3000);
@@ -72,6 +85,8 @@ export const A2MAssistant: React.FC = () => {
                 alt="Selo Oficial do Assistente A2M SigniTelling AI"
                 className="w-full h-full object-contain filter drop-shadow"
                 loading="lazy"
+                width={80}
+                height={80}
               />
             </div>
           </div>

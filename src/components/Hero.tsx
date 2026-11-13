@@ -25,7 +25,7 @@ export const Hero: React.FC = () => {
             <div className="space-y-2">
               <h1 className="font-heading font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1]">
                 CRIANDO AS <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-slate-400">
+                <span className="text-white">
                   MARCAS DO FUTURO
                 </span>
               </h1>
@@ -114,11 +114,13 @@ export const Hero: React.FC = () => {
                   alt="Livro Criando as Marcas do Futuro - Método A2M SigniTelling por Maurício Sarmento"
                   className="w-full max-w-[340px] sm:max-w-[400px] h-auto object-contain mx-auto filter drop-shadow-[0_20px_35px_rgba(3,9,23,0.9)]"
                   loading="eager"
+                  width={400}
+                  height={500}
                 />
               </div>
 
               {/* Floating Badge: Obra Oficial */}
-              <div className="absolute -bottom-2 right-2 sm:right-6 glass-card px-4 py-2 rounded-xl flex items-center gap-2.5 shadow-2xl border border-amber-400/40 animate-bounce duration-1000">
+              <div className="absolute -bottom-2 right-2 sm:right-6 glass-card px-4 py-2 rounded-xl flex items-center gap-2.5 shadow-2xl border border-amber-400/40 animate-float">
                 <div className="w-7 h-7 rounded-full bg-amber-400/20 border border-amber-400 flex items-center justify-center">
                   <Award className="w-4 h-4 text-amber-400" />
                 </div>
