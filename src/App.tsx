@@ -5,7 +5,6 @@ import { Method } from './components/Method';
 import { AboutAuthor } from './components/AboutAuthor';
 import { BookConversion } from './components/BookConversion';
 import { A2MAssistant } from './components/A2MAssistant';
-import { Footer } from './components/Footer';
 
 export const App: React.FC = () => {
   return (
@@ -18,7 +17,6 @@ export const App: React.FC = () => {
         <BookConversion />
         <A2MAssistant />
       </main>
-      <Footer />
     </div>
   );
 };

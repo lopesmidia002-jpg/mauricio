@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Copy, Check, ChevronDown, ChevronUp, Code2 } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { A2M_SYSTEM_PROMPT_STRING } from '../data/assistantJson';
 
 export const A2MAssistant: React.FC = () => {
   const [copied, setCopied] = useState(false);
   const [showToast, setShowToast] = useState(false);
-  const [showJsonCode, setShowJsonCode] = useState(false);
 
   const handleCopy = async () => {
     try {
@@ -48,73 +47,47 @@ export const A2MAssistant: React.FC = () => {
         </div>
       )}
 
-      {/* Part 1: Dark Banner Section (As exactly in PDF) */}
-      <section className="py-14 sm:py-20 bg-[#151922] text-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 items-center">
+      {/* Part 1: Dark Banner Section (Fundo Grafite Neutro #292929 exatamente como no original do PDF) */}
+      <section className="w-full py-16 sm:py-24 bg-[#292929] text-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 lg:gap-14 items-center">
             
-            {/* Left: Shield Logo (img06.png) */}
-            <div className="md:col-span-4 flex justify-center md:justify-start">
-              <div className="w-40 sm:w-48 h-40 sm:h-48 flex items-center justify-center p-2">
+            {/* Left: Shield Logo (img06.png) - Sem sombra artificial */}
+            <div className="md:col-span-5 lg:col-span-4 flex justify-center md:justify-start">
+              <div className="w-full max-w-[220px] sm:max-w-[260px] lg:max-w-[300px]">
                 <img
                   src="/assets/img06.png"
                   alt="Assistente A2M SigniTelling AI"
-                  className="w-full h-full object-contain filter drop-shadow-2xl"
+                  className="w-full h-auto object-contain block"
                   loading="lazy"
-                  width={200}
-                  height={200}
+                  width={317}
+                  height={391}
                 />
               </div>
             </div>
 
             {/* Right: Title, Text and Copy Button */}
-            <div className="md:col-span-8 space-y-4 text-gray-200">
-              <h2 className="font-heading font-bold text-xl sm:text-2xl lg:text-3xl text-white tracking-tight">
+            <div className="md:col-span-7 lg:col-span-8 space-y-5 sm:space-y-6 text-white">
+              <h2 className="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight">
                 Assistente A2M AI SigniTelling™.
               </h2>
 
-              <p className="text-xs sm:text-sm leading-relaxed text-gray-300">
+              <p className="text-sm sm:text-base leading-relaxed text-white/95 font-normal">
                 O assistente está disponível para os leitores e para quem se interessa pelo método. Foi pensado para que empreendedores e profissionais liberais tenham acesso a um processo rigoroso de posicionamento, sem depender de contratar uma consultoria para dar o primeiro passo. O que o livro oferece é o conhecimento profundo do método, seus fundamentos, sua lógica e a arquitetura que orienta cada etapa do processo. Quem usa só o assistente recebe um percurso bem conduzido. Quem lê o livro entende por que ele interrompe um salto abstrato, por que exige prova e por que recomenda renunciar. A responsabilidade de escolher o que sua marca deseja significar continua sendo sua.
               </p>
 
-              <p className="text-xs sm:text-sm leading-relaxed text-gray-300">
+              <p className="text-sm sm:text-base leading-relaxed text-white/95 font-normal">
                 Copie o código JSON (JavaScript Object Notation) abaixo e cole na IA que já usa ou assina. Não é preciso instalar nada.
               </p>
 
-              <div className="pt-2 flex flex-wrap items-center gap-3">
+              <div className="pt-2">
                 <button
                   onClick={handleCopy}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-black/50 hover:bg-black/80 border border-gray-600 hover:border-gray-400 text-white font-heading font-bold text-xs uppercase tracking-wider transition-colors shadow-sm"
+                  className="inline-flex items-center justify-center px-10 sm:px-12 py-3 sm:py-3.5 rounded-full bg-[#BBC9D6] hover:bg-[#a9bac8] active:scale-[0.98] text-black font-heading font-bold text-xs sm:text-sm uppercase tracking-wider transition-all"
                 >
-                  {copied ? (
-                    <>
-                      <Check className="w-4 h-4 text-emerald-400" />
-                      <span>CÓDIGO COPIADO!</span>
-                    </>
-                  ) : (
-                    <>
-                      <Copy className="w-4 h-4 text-gray-300" />
-                      <span>COPIAR CÓDIGO</span>
-                    </>
-                  )}
-                </button>
-
-                <button
-                  onClick={() => setShowJsonCode(!showJsonCode)}
-                  className="inline-flex items-center gap-1.5 px-4 py-3 rounded-lg text-xs font-mono text-gray-400 hover:text-white transition-colors"
-                >
-                  <Code2 className="w-4 h-4" />
-                  <span>{showJsonCode ? 'Ocultar JSON' : 'Visualizar JSON'}</span>
-                  {showJsonCode ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+                  {copied ? 'CÓDIGO COPIADO!' : 'COPIAR CÓDIGO'}
                 </button>
               </div>
-
-              {/* Collapsible JSON Viewer */}
-              {showJsonCode && (
-                <div className="mt-4 p-4 rounded-xl bg-black/80 border border-gray-800 text-left font-mono text-[11px] text-gray-300 max-h-72 overflow-y-auto">
-                  <pre className="whitespace-pre-wrap">{A2M_SYSTEM_PROMPT_STRING}</pre>
-                </div>
-              )}
             </div>
 
           </div>
@@ -122,7 +95,7 @@ export const A2MAssistant: React.FC = () => {
       </section>
 
       {/* Part 2: White Background Legal & Guidelines Section (As exactly in PDF) */}
-      <section id="termos" className="py-14 sm:py-20 bg-white border-t border-gray-100 text-gray-800 text-xs sm:text-sm leading-relaxed">
+      <section id="termos" className="py-14 sm:py-20 bg-white text-gray-800 text-xs sm:text-sm leading-relaxed">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-10">
           
           {/* Limites */}
