@@ -1,34 +1,33 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
 
 export const BookConversion: React.FC = () => {
   return (
-    <section id="comprar" className="py-12 sm:py-20 bg-white">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 items-center">
+    <section id="comprar" className="py-14 sm:py-20 lg:py-24 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 lg:gap-14 items-center">
           
           {/* Left Column: Purchase Details & Button */}
-          <div className="md:col-span-6 space-y-6 text-gray-900">
+          <div className="md:col-span-6 lg:col-span-7 space-y-6 sm:space-y-7 text-black">
             <div>
-              <h2 className="font-heading font-extrabold text-xl sm:text-2xl lg:text-3xl text-gray-950 uppercase tracking-tight leading-tight">
+              <h2 className="font-heading font-bold text-xl sm:text-2xl lg:text-3xl xl:text-[2rem] text-black uppercase tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
                 CRIANDO AS MARCAS DO FUTURO.
               </h2>
-              <p className="text-sm sm:text-base text-gray-600 font-medium mt-1">
+              <p className="text-sm sm:text-base lg:text-lg text-black font-normal mt-1">
                 Autor: Maurício Sarmento
               </p>
             </div>
 
             <div>
-              <h3 className="font-heading font-black text-2xl sm:text-3xl text-gray-950 tracking-wider">
+              <h3 className="font-heading font-bold text-2xl sm:text-3xl text-black tracking-wide">
                 AMAZON
               </h3>
             </div>
 
-            <div className="space-y-1">
-              <span className="text-xs sm:text-sm text-gray-600 block">
+            <div className="space-y-1.5">
+              <span className="text-sm sm:text-base text-black block font-normal">
                 Formatos:
               </span>
-              <div className="font-heading font-extrabold text-sm sm:text-base text-gray-950 space-y-0.5 tracking-wide">
+              <div className="font-heading font-bold text-sm sm:text-base text-black space-y-0.5 tracking-wide">
                 <div>CAPA COMUM</div>
                 <div>KINDLE</div>
               </div>
@@ -39,24 +38,23 @@ export const BookConversion: React.FC = () => {
                 href="https://www.amazon.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-10 py-3.5 rounded-full bg-[#9BB2C9] hover:bg-[#859EBA] active:scale-[0.98] text-white font-heading font-black text-xs sm:text-sm uppercase tracking-widest shadow-sm transition-all"
+                className="inline-flex items-center justify-center px-12 sm:px-14 py-3 sm:py-3.5 rounded-full bg-[#BBC9D6] hover:bg-[#a9bac8] active:scale-[0.98] text-black font-heading font-bold text-xs sm:text-sm uppercase tracking-wider transition-all"
               >
-                <span>COMPRAR</span>
-                <ExternalLink className="w-3.5 h-3.5 opacity-80" />
+                COMPRAR
               </a>
             </div>
           </div>
 
-          {/* Right Column: 3D Book Mockup (img05.png) */}
-          <div className="md:col-span-6 flex justify-center">
-            <div className="max-w-[340px] sm:max-w-[380px] w-full">
+          {/* Right Column: 3D Book Mockup (img05.png) - Sem borda ou drop shadow artificial */}
+          <div className="md:col-span-6 lg:col-span-5 flex justify-center md:justify-end">
+            <div className="max-w-[420px] sm:max-w-[480px] lg:max-w-[540px] w-full">
               <img
                 src="/assets/img05.png"
                 alt="Criando as Marcas do Futuro - Capa Comum e Kindle na Amazon"
-                className="w-full h-auto object-contain filter drop-shadow-xl"
+                className="w-full h-auto object-contain block"
                 loading="lazy"
-                width={380}
-                height={480}
+                width={1000}
+                height={1033}
               />
             </div>
           </div>
