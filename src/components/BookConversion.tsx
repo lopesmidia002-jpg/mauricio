@@ -38,9 +38,9 @@ export const BookConversion: React.FC = () => {
                 href="https://www.amazon.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-12 sm:px-14 py-3 sm:py-3.5 rounded-full bg-[#BBC9D6] hover:bg-[#a9bac8] active:scale-[0.98] text-black font-heading font-extrabold sm:font-black text-sm sm:text-base uppercase tracking-wider transition-all"
+                className="inline-flex items-center justify-center px-12 sm:px-14 py-3 sm:py-3.5 rounded-full bg-[#BBC9D6] hover:bg-[#a9bac8] active:scale-[0.98] text-black font-heading font-black text-sm sm:text-base uppercase tracking-wider transition-all"
               >
-                COMPRAR
+                <span className="font-black">COMPRAR</span>
               </a>
             </div>
           </div>

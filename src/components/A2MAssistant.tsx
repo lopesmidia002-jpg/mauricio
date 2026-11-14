@@ -83,9 +83,11 @@ export const A2MAssistant: React.FC = () => {
               <div className="pt-2">
                 <button
                   onClick={handleCopy}
-                  className="inline-flex items-center justify-center px-10 sm:px-12 py-3 sm:py-3.5 rounded-full bg-[#BBC9D6] hover:bg-[#a9bac8] active:scale-[0.98] text-black font-heading font-extrabold sm:font-black text-xs sm:text-sm uppercase tracking-wider transition-all"
+                  className="inline-flex items-center justify-center px-10 sm:px-12 py-3 sm:py-3.5 rounded-full bg-[#BBC9D6] hover:bg-[#a9bac8] active:scale-[0.98] text-black font-heading font-black text-sm sm:text-base uppercase tracking-wider transition-all"
                 >
-                  {copied ? 'CÓDIGO COPIADO!' : 'COPIAR CÓDIGO'}
+                  <span className="font-black">
+                    {copied ? 'CÓDIGO COPIADO!' : 'COPIAR CÓDIGO'}
+                  </span>
                 </button>
               </div>
             </div>

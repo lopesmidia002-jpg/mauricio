@@ -37,6 +37,7 @@
   - Seção Assistente A2M AI Idêntica ao Original (Fundo Grafite #292929 e Botão Pílula): Atualização da cor de fundo de azul escuro para grafite neutro (`#292929`); remoção do drop shadow artificial do escudo (`img06.png`); eliminação do botão secundário de visualização do JSON; botão *"COPIAR CÓDIGO"* reestruturado em formato pílula azul ardósia (`#BBC9D6`) com texto preto em caixa alta sem ícone, espelhando 1:1 o layout do PDF oficial.
   - Ocultação do Rodapé da Página (Como no Original): Remoção do componente `Footer` em `App.tsx`, finalizando o documento diretamente na linha de copyright dos Termos de Uso (*"© 2026 Maurício Nunes Sarmento. Todos os direitos reservados."*), exatamente como no arquivo original `LANDING PAGE LIVRO.pdf`.
   - Correção de Texto Fantasma "TURO." e Negrito no Botão: Eliminação dos caracteres residuais de texto que haviam sido capturados no ativo `img05.png` durante a extração do PDF; aplicação de peso em negrito intenso (`font-extrabold sm:font-black`) no texto *"COMPRAR"* do botão da Amazon e *"COPIAR CÓDIGO"* do Assistente.
+  - Tipografia em Negrito nos Botões ("COPIAR CÓDIGO" e "COMPRAR"): Uniformização e aplicação explícita de negrito puro (`font-black` 900) e escala de tamanho (`text-sm sm:text-base`) para os botões de ação em pílula azul ardósia (`#BBC9D6`), com carregamento completo de fontes de alta densidade no `index.html`.
 
 ---
 
